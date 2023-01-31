@@ -10,10 +10,11 @@
     <header>
       <a class="page-header">
         <nav class="navigation">
-          <a><img class="navigation-logo" src="index.html" alt="Логотип Седона"></a>
+          <a class="navigation-logo" href="index.html"><img class="navigation-logo-image" src="images/svg/logo.svg"
+              width="138" height="64" alt="Логотип Седона"></a>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="first-page.html">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
@@ -24,10 +25,15 @@
           </ul>
           <ul class="navigation-user">
             <li class="navigation-item">
-              <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+              <a class="navigation-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+                <img src="images/svg/search.svg" width="18" height="18" alt="Поиск"></a>
             </li>
             <li class="navigation-item">
-              <button class="heart" type="button"><span class="visually-hidden">Лайк</span></button>
+              <a class="heart">
+                <span class="visually-hidden">Лайк</span>
+                <img src="images/svg/heart.svg" width="18" height="17" alt="Лайк"></a>
+            </li>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">ХОЧУ СЮДА!</a>
@@ -102,20 +108,26 @@
 
         <a href="#" class="button button-cards">
           <span class="visually-hidden">Показать карточки</span>
+          <img src="images/svg/filter-cards.svg" width="30" heigth="30" alt="Раскладка карточки">
         </a>
+
         <a class="button buttom-room" href="#">
           <span class="visually-hidden">Показать номер</span>
+          <img src="images/svg/filter-computer.svg" width="30" heigth="30" alt="Раскладка по номерам">
         </a>
+
         <a class="button button-list-rooms" href="#">
           <span class="visually-hidden">Показать список</span>
+          <img src="images/svg/filter-list.svg" width="30" heigth="30" alt="Раскладка список">
         </a>
 
         <ul class="product-list">
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
               <h3 class="product-card-title">Amara Resort & Spa</h3>
+              <img class="product-card-image" src="images/jpeg/hotel-1.jpg" width="300" height="212"
+                alt="Амара Ресорт и Спа">
             </a>
             <p>Гостиница</p>
             <b class="product-card-price">От 4000 ₽</b>
@@ -125,8 +137,9 @@
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
               <h3 class="product-card-title">Villas at Poco Diablo</h3>
+              <img class="product-card-image" src="images/jpeg/hotel-2.jpg" width="300" height="212"
+                alt="Вилас ат Поко Диабло">
             </a>
             <p>Гостиница</p>
             <b class="product-card-price">От 5000 ₽</b>
@@ -136,8 +149,9 @@
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
               <h3 class="product-card-title">Desert Quail Inn</h3>
+              <img class="product-card-image" src="images/jpeg/hotel-3.jpg" width="300" height="212"
+                alt="Десерт Квуаил Инн">
             </a>
             <p>Гостиница</p>
             <b class="product-card-price">От 2500 ₽</b>
@@ -147,8 +161,8 @@
 
           <li class="product-card">
             <a class="product-card-link" href="product.html">
-              <img class="product-card-image" src="" alt="">
               <h3 class="product-card-title">GreenTree Inn</h3>
+              <img class="product-card-image" src="images/jpeg/hotel-4.jpg" width="300" height="212" alt="ГринТри Инн">
             </a>
             <p>Гостиница</p>
             <b class="product-card-price">От 1500 ₽</b>
@@ -193,41 +207,47 @@
 
     <footer class="page-footer">
       <section class="newsletter">
-        <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-        <p class="page-footer-p">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="" method="post">
-          <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">Подписаться</button>
-        </form>
-      </section>
-      <section class="footer-social">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">vk.com</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">telegram</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">Youtube</span>
-            </a>
-          </li>
-          <section class="footer-contacts">
-            <h2 class="visually-hidden">Контакты</h2>
-            <a class="footer-contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </section>
-          <section class="copyright">
-            <h2 class="visually-hidden">htmlacademy</h2>
-            <a class="button" href="https://htmlacademy.ru/">
-              <span class="visually-hidden">htmlacademy</span>
-            </a>
-          </section>
+        <img src="images/JPEG/join.jpg" width="hug" height="hug" alt="Размытый вид Седоны">
+        <section class="newsletter">
+          <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+          <p class="page-footer-p">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="newsletter-form" action="" method="post">
+            <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" required>
+            <button class="button newsletter-button" type="submit">Подписаться</button>
+          </form>
+        </section>
+        <section class="footer-social">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
+              <a class="button" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">vk.com</span>
+                <img src="images/svg/vk.svg" width="24" height="14" alt="Вконтакте">
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://t.me/htmlacademy">
+                <span class="visually-hidden">telegram</span>
+                <img src="images/svg/telegram.svg" width="18" height="16" alt="Телеграм">
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span>
+                <img src="images/svg/youtube.svg" width="22" height="17" alt="Ютуб">
+              </a>
+            </li>
+            <section class="footer-contacts">
+              <h2 class="visually-hidden">Контакты</h2>
+              <a class="footer-contacts" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            </section>
+            <section class="copyright">
+              <h2 class="visually-hidden">htmlacademy</h2>
+              <a class="button" href="https://htmlacademy.ru/">
+                <span class="visually-hidden">htmlacademy</span>
+                <img src="images/svg/logo_htmlacademy.svg" width="115" height="33" alt="чтмл Академия">
+              </a>
+            </section>
     </footer>
   </body>
 
