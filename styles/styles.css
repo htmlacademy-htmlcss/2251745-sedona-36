@@ -1,0 +1,241 @@
+@font-face {
+font-family: "PT Sans";
+font-style:normal;
+font-weight:400;
+src: url("fonts/ptsans-400.woff2") format("woff2");
+font-display:swap
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style:normal;
+  font-weight:700;
+  src: url("fonts/ptsans-700.woff2") format("woff2");
+  font-display:swap
+  }
+body {
+font-family: "PT Sans", sans-serif;
+font-size:22px;
+line-height: 26px;
+color: #000000;
+background-color: #FFFFFF;
+}
+
+.page-header{
+color:#000000;
+background-color: #FFFFFF;
+}
+.navigation-link{
+font-size:20px;
+line-height: 24px;
+font-weight: 700;
+color: #000000;
+background-color: #FFFFFF;
+text-transform: capitalize;
+text-decoration:none;
+text-align:center;
+}
+.navigation-link-visit{
+  font-size:16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-decoration:none;
+  text-align:center;
+}
+
+
+.main-index{
+background-image: url("images/JPEG/sedona-1.jpg");
+color: #000000;
+background-color: #FFFFFF;
+background-repeat:no-repeat;
+background-size: 1200 485px;
+}
+
+.advantage-preview .advantage-title{
+font-size:30px;
+line-height: 36px;
+font-weight: 700;
+text-transform: uppercase;
+text-align:center;
+}
+.advantage-preview .advantade-description{
+font-size:22px;
+line-height: 26px;
+font-weight: 400;
+text-align:center;
+}
+.advantages-item-welcom-1 {
+color: #FFFFFF;
+background-color:#82B3D3;
+}
+.description-of-sedona-h{
+font-size:24px;
+line-height: 28px;
+font-weight: 700;
+color: #FFFFFF;
+text-transform: uppercase;
+text-align:center;
+}
+.description-of-sedona-p{
+font-size:18px;
+line-height: 21px;
+font-weight: 400;
+color: #FFFFFF;
+text-align:center;
+}
+.description-of-sedona-foto-1{
+background-image: url("images/JPEG/sedona-2.jpg");
+background-repeat:no-repeat;
+background-size: 880px 385px;
+align-self: stretch;
+}
+.advantages-title{
+font-size:24px;
+line-height:28px;
+font-weight:700;
+color: #000000;
+text-align:center;
+text-transform: uppercase;
+}
+.advantages-description{
+font-size:18px;
+line-height:21px;
+font-weight:400;
+color: #333333;
+text-align:center;
+}
+.description-of-sedona-foto-2{
+  background-image: url("images/JPEG/sedona-3.jpg");
+  background-repeat:no-repeat;
+  background-size: 880px 385px;
+  align-self: stretch;
+}
+.advantages-item-welcom-2{
+color: #FFFFFF;
+background-color:#82B3D3;
+}
+.welcome-sedona{
+font-size:30px;
+line-height: 36px;
+font-weight: 700;
+text-transform: uppercase;
+text-align:center;
+}
+.causes-visit{
+font-size:22px;
+line-height: 26px;
+font-weight: 400;
+text-align:center;
+}
+.advantages-item-area{
+color: #333333;
+background-color:rgba(131, 179, 211, 0.12);
+}
+.advantages-item-road{
+color: #333333;
+background-color:rgba(131, 179, 211, 0.2);
+}
+.advantages-item-people{
+color: #333333;
+background-color:rgba(131, 179, 211, 0.12);
+}
+.advantages-item-rent{
+color: #333333;
+background-color:rgba(131, 179, 211, 0.12);
+}
+.advantages-item-present{
+color: #333333;
+background-color:rgba(131, 179, 211, 0.12);
+}
+.rent{
+background: url("images/svg/house.svg") no-repeat;
+background-size: 75px 72px;
+color:#83B3D3;
+}
+.food{
+background: url("images/svg/food.svg") no-repeat;
+background-size: 74px 70px;
+color:#83B3D3;
+}
+.present{
+background: url("images/svg/present.svg") no-repeat;
+background-size: 74px 70px;
+color:#83B3D3;
+}
+.offer{
+background-color:#ffffff;
+}
+.offer-title{
+font-size:30px;
+line-height: 36px;
+font-weight: 700;
+text-transform: uppercase;
+text-align:center;
+}
+.offer-description{
+font-size:22px;
+line-height:26px;
+font-weight:400;
+color: #333333;
+text-align:center;
+}
+.button-all{
+font-family:inherit;
+font-size: 20px;
+line-height: 36px;
+font-weight: 700;
+text-align: center;
+color:#FFFFFF;
+background-color: #756157;
+text-decoration: none;
+text-transform: uppercase;
+}
+.footer-page-subscription{
+  background-image: url("images/JPEG/join.jpg");
+  color: #ffffff;
+  background-color: #000000;
+  background-repeat:no-repeat;
+  background-size: 1200px 414.86px;
+}
+.page-footer-title{
+  font-size:30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align:center;
+  color:#000000;
+}
+.page-footer-p{
+  font-size:22px;
+  line-height:26px;
+  font-weight:400;
+  color: #000000;
+  text-align:center;
+  }
+  .page-footer a {
+    color: #000000;
+    text-decoration:none;
+  }
+  .newsletter-button{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color:#FFFFFF;
+    background-color: #82B3D3;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .footer-contacts{
+    font-size:40px;
+    line-height:40px;
+    font-weight:400;
+    color: #000000;
+    text-align:center;
+    text-transform: uppercase;
+    text-decoration:none;
+  }
