@@ -185,8 +185,8 @@ text-align:center;
 }
 .button-all{
 font-family:inherit;
-font-size: 20px;
-line-height: 36px;
+font-size: 16px;
+line-height: 20px;
 font-weight: 700;
 text-align: center;
 color:#FFFFFF;
@@ -239,3 +239,109 @@ text-transform: uppercase;
     text-transform: uppercase;
     text-decoration:none;
   }
+  .htmlacademy-image{
+    color: #000000;
+  }
+  .catalog-background-title{
+  font-size: 60px;
+  line-height: 78px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  }
+.breadcrumbs {
+  color: #000000;
+}
+.breadcrumbs-link {
+  color: inherit;
+}
+.catalog-filter-title{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: capitalize;
+}
+.control{
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #000000;
+}
+.select-control{
+color: #333333;
+background-color: #ffffff;
+}
+.button-cards{
+color: #000000;
+background-color: #ffffff;
+border:2px solid #000000;
+border-radius: 4px;
+}
+.buttom-room{
+color: #000000;
+background-color: #ffffff;
+border: 2px solid #E5E5E5;
+border-radius: 4px;
+}
+.button-list-rooms{
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+}
+.product-card {
+  background-color: #ffffff;
+}
+.product-card-link {
+  text-decoration: none;
+}
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+.product-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-align: right;
+}
+.product-card-button{
+  color: #ffffff;
+  background-color:#756157;
+  border: 2px solid #756157;
+  border-radius: 4px;
+  padding:8px 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.product-card-chosen{
+  color: #ffffff;
+  background-color:#82B3D3;
+  border: 2px solid #82B3D3;
+  border-radius: 4px;
+  padding:8px 50px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.pagination {
+background-color: #ffffff;
+}
+
+.pagination-link {
+color:#ffffff;
+font-size: 20px;
+line-height: 36px;
+font-weight: 700;
+text-align: center;
+text-transform: uppercase;
+border-radius: 4px;
+background-color:#82B3D3;
+text-decoration: none;
+}
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}

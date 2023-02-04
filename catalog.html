@@ -44,9 +44,11 @@
     <main class="main-inner">
       <div class="catalog-background">
         <h1 class="catalog-background-title">Гостиницы Седоны</h1>
+        <img class="catalog-background-image" src="images/jpeg/filter-fon.jpg" width="1200" height="412" alt="Размытый фон гор Седоны">
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">Главная</span></a>
+            <a class="breadcrumbs-link" href="index.html"><img src="images/svg/house.svg" width="12" height="12"
+                alt="Лайк"><span class="visually-hidden">Главная</span></a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -101,26 +103,28 @@
           <button class="button" type="submit">Сбросить</button>
         </form>
 
-        <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Сначала популярные</option>
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-        </select>
+        <div class="sorting-container">
+          <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Сначала популярные</option>
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+          </select>
 
-        <a href="#" class="button button-cards">
-          <span class="visually-hidden">Показать карточки</span>
-          <img src="images/svg/filter-cards.svg" width="30" heigth="30" alt="Раскладка карточки">
-        </a>
+          <a href="#" class="button button-cards">
+            <span class="visually-hidden">Показать карточки</span>
+            <img src="images/svg/filter-cards.svg" width="30" heigth="30" alt="Раскладка карточки">
+          </a>
 
-        <a class="button buttom-room" href="#">
-          <span class="visually-hidden">Показать номер</span>
-          <img src="images/svg/filter-computer.svg" width="30" heigth="30" alt="Раскладка по номерам">
-        </a>
+          <a class="button buttom-room" href="#">
+            <span class="visually-hidden">Показать номер</span>
+            <img src="images/svg/filter-computer.svg" width="30" heigth="30" alt="Раскладка по номерам">
+          </a>
 
-        <a class="button button-list-rooms" href="#">
-          <span class="visually-hidden">Показать список</span>
-          <img src="images/svg/filter-list.svg" width="30" heigth="30" alt="Раскладка список">
-        </a>
+          <a class="button button-list-rooms" href="#">
+            <span class="visually-hidden">Показать список</span>
+            <img src="images/svg/filter-list.svg" width="30" heigth="30" alt="Раскладка список">
+          </a>
+        </div>
 
         <ul class="product-list">
 
@@ -145,7 +149,7 @@
             <p>Гостиница</p>
             <b class="product-card-price">От 5000 ₽</b>
             <a class="product-card-button button" href="#">подробнее</a>
-            <a class="product-card-button button" href="#">в избранное</a>
+            <a class="product-card-chosen button" href="#">в избранное</a>
           </li>
 
           <li class="product-card">
@@ -157,7 +161,7 @@
             <p>Гостиница</p>
             <b class="product-card-price">От 2500 ₽</b>
             <a class="product-card-button button" href="#">подробнее</a>
-            <a class="product-card-button button" href="#">в избранное</a>
+            <a class="product-card-chosen button" href="#">в избранное</a>
           </li>
 
           <li class="product-card">
@@ -168,7 +172,7 @@
             <p>Гостиница</p>
             <b class="product-card-price">От 1500 ₽</b>
             <a class="product-card-button button" href="#">подробнее</a>
-            <a class="product-card-button button" href="#">в избранное</a>
+            <a class="product-card-chosen button" href="#">в избранное</a>
           </li>
         </ul>
 
@@ -207,8 +211,6 @@
     </main>
 
     <footer class="page-footer">
-      <section class="newsletter">
-        <img src="images/JPEG/join.jpg" width="hug" height="hug" alt="Размытый вид Седоны">
         <section class="newsletter">
           <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
           <p class="page-footer-p">Только полезная информация и никакого спама, честное бойскаутское!</p>
