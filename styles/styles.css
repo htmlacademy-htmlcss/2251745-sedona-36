@@ -2,7 +2,7 @@
 font-family: "PT Sans";
 font-style:normal;
 font-weight:400;
-src: url("fonts/ptsans-400.woff2") format("woff2");
+src: url("../fonts/ptsans-400.woff2") format("woff2");
 font-display:swap
 }
 
@@ -10,13 +10,14 @@ font-display:swap
   font-family: "PT Sans";
   font-style:normal;
   font-weight:700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display:swap
   }
+
 body {
 font-family: "PT Sans", sans-serif;
-font-size:22px;
-line-height: 26px;
+font-size:16px;
+line-height: 140%;
 color: #000000;
 background-color: #FFFFFF;
 }
@@ -48,11 +49,19 @@ text-align:center;
 
 
 .main-index{
-background-image: url("images/JPEG/sedona-1.jpg");
+background-image: url("../images/JPEG/sedona-1.jpg");
 color: #000000;
 background-color: #FFFFFF;
 background-repeat:no-repeat;
-background-size: 1200 485px;
+background-size: 1200px 485px;
+}
+.welcome-image-wrapper{
+background-image: url("images/JPEG/sedona-1.jpg");
+background-repeat:no-repeat;
+background-size: 1200px 485px;
+width:100%;
+height:485px;
+
 }
 
 .advantage-preview .advantage-title{
@@ -131,7 +140,7 @@ line-height: 26px;
 font-weight: 400;
 text-align:center;
 }
-.advantages-item-area{
+.advantages-item{
 color: #333333;
 background-color:rgba(131, 179, 211, 0.12);
 }
@@ -152,17 +161,17 @@ color: #333333;
 background-color:rgba(131, 179, 211, 0.12);
 }
 .rent{
-background: url("images/svg/house.svg") no-repeat;
+background: url("../images/svg/house.svg") no-repeat;
 background-size: 75px 72px;
 color:#83B3D3;
 }
 .food{
-background: url("images/svg/food.svg") no-repeat;
+background: url("../images/svg/food.svg") no-repeat;
 background-size: 74px 70px;
 color:#83B3D3;
 }
 .present{
-background: url("images/svg/present.svg") no-repeat;
+background: url("../images/svg/present.svg") no-repeat;
 background-size: 74px 70px;
 color:#83B3D3;
 }
@@ -184,7 +193,6 @@ color: #333333;
 text-align:center;
 }
 .button-all{
-font-family:inherit;
 font-size: 16px;
 line-height: 20px;
 font-weight: 700;
