@@ -21,17 +21,10 @@ line-height: 140%;
 color: #000000;
 background-color: #FFFFFF;
 }
-
-.page-header{
-color:#000000;
-background-color: #FFFFFF;
-}
 .navigation-link{
 font-size:20px;
 line-height: 24px;
 font-weight: 700;
-color: #000000;
-background-color: #FFFFFF;
 text-transform: capitalize;
 text-decoration:none;
 text-align:center;
@@ -46,12 +39,8 @@ text-align:center;
   text-decoration:none;
   text-align:center;
 }
-
-
 .main-index{
 background-image: url("../images/JPEG/sedona-1.jpg");
-color: #000000;
-background-color: #FFFFFF;
 background-repeat:no-repeat;
 background-size: 1200px 485px;
 }
@@ -86,6 +75,7 @@ font-size:24px;
 line-height: 28px;
 font-weight: 700;
 color: #FFFFFF;
+background-color:#82B3D3;
 text-transform: uppercase;
 text-align:center;
 }
@@ -94,6 +84,7 @@ font-size:18px;
 line-height: 21px;
 font-weight: 400;
 color: #FFFFFF;
+background-color:#82B3D3;
 text-align:center;
 }
 .description-of-sedona-foto-1{
@@ -123,10 +114,6 @@ text-align:center;
   background-size: 880px 385px;
   align-self: stretch;
 }
-.advantages-item-welcom-2{
-color: #FFFFFF;
-background-color:#82B3D3;
-}
 .welcome-sedona{
 font-size:30px;
 line-height: 36px;
@@ -138,9 +125,10 @@ text-align:center;
 font-size:22px;
 line-height: 26px;
 font-weight: 400;
+color:#333333;
 text-align:center;
 }
-.advantages-item{
+.advantages-item-area{
 color: #333333;
 background-color:rgba(131, 179, 211, 0.12);
 }
@@ -193,8 +181,8 @@ color: #333333;
 text-align:center;
 }
 .button-all{
-font-size: 16px;
-line-height: 20px;
+font-size: 20px;
+line-height: 36px;
 font-weight: 700;
 text-align: center;
 color:#FFFFFF;
@@ -202,26 +190,25 @@ background-color: #756157;
 text-decoration: none;
 text-transform: uppercase;
 }
-.footer-page-subscription{
-  background-image: url("images/JPEG/join.jpg");
+.newsletter-fon{
+  background-image: url("../images/JPEG/join.jpg");
   color: #ffffff;
   background-color: #000000;
   background-repeat:no-repeat;
   background-size: 1200px 414.86px;
 }
 .page-footer-title{
-color:#ffffff;
 font-weight: 700;
 font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
+text-align: center;
 }
 
 .page-footer-p{
   font-size:22px;
   line-height:26px;
   font-weight:400;
-  color:#ffffff;
   text-align:center;
   }
   .page-footer a {
@@ -238,7 +225,7 @@ text-transform: uppercase;
     text-decoration: none;
     text-transform: uppercase;
   }
-  .footer-contacts{
+  .footer-contacts-tel{
     font-size:40px;
     line-height:40px;
     font-weight:400;
@@ -274,6 +261,15 @@ text-transform: uppercase;
   line-height: 23px;
   font-weight: 400;
   color: #ffffff;
+}
+.button-select{
+font-size: 16px;
+line-height: 20px;
+align-items: center;
+text-transform: uppercase;
+color:#FFFFFF;
+background-color:  #82B3D3;
+border-radius: 4px;
 }
 .select-control{
 color: #333333;
@@ -335,10 +331,15 @@ border-radius: 4px;
   text-transform: uppercase;
   text-align: center;
 }
-.pagination {
-background-color: #ffffff;
+.product-card-chosen-checked{
+  color: #ffffff;
+  background-color:#7DB54F;
+  border: 2px solid #7DB54F;
+  border-radius: 4px;
+  padding:8px 50px;
+  text-transform: uppercase;
+  text-align: center;
 }
-
 .pagination-link {
 color:#ffffff;
 font-size: 20px;
@@ -355,7 +356,7 @@ text-decoration: none;
   background-color: #F2F2F2;
 }
 .newsletter{
-background-image: url("../images/JPEG/join.jpg");
+background-image: #ffffff;
 background-repeat:no-repeat;
 background-size: 1200px 414,86px;
 color:#ffffff;
