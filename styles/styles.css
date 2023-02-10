@@ -33,15 +33,19 @@ width: 1200px;
 margin: 0 auto;
 }
 .navigation-list{
+display:flex;
+align-items: center;
+justify-content: center;
 width: 450px;
 margin:0;
 padding: 0;
 }
 .navigation-user{
+display: flex;
+justify-content: center;
 max-width: 310px;
 margin-left:auto;
 }
-
 .navigation-link{
 font-size:20px;
 line-height: 24px;
@@ -49,6 +53,7 @@ font-weight: 700;
 text-transform: capitalize;
 text-decoration:none;
 text-align:center;
+color:#000000;
 }
 .navigation-link-visit{
   font-size:16px;
@@ -84,8 +89,41 @@ background-repeat:no-repeat;
 background-size: 1200px 485px;
 width:100%;
 height:485px;
-
 }
+.advantages-list{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 0;
+padding: 0;
+text-align: center;
+}
+.welcom-1-1{
+display:flex;
+justify-content: center;
+}
+.advantade-conditions{
+display:flex;
+flex-direction:row;
+height: 385px;
+}
+.welcome-2-2{
+display: flex;
+}
+.advantages-live{
+  display:flex;
+  flex-direction:row;
+  height: 385px;
+  }
+  .advantage-preview{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 1200px;
+  height: 246px;
+  }
 
 .advantage-preview .advantage-title{
 font-size:30px;
@@ -101,6 +139,10 @@ font-weight: 400;
 text-align:center;
 }
 .advantages-item-welcom-1 {
+color: #FFFFFF;
+background-color:#82B3D3;
+}
+.advantages-item-welcom-2{
 color: #FFFFFF;
 background-color:#82B3D3;
 }
@@ -148,6 +190,14 @@ text-align:center;
   background-size: 880px 385px;
   align-self: stretch;
 }
+.welcom-sedona-visit{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 1200px;
+height: 246px;
+ }
 .welcome-sedona{
 font-size:30px;
 line-height: 36px;
@@ -165,37 +215,59 @@ text-align:center;
 .advantages-item-area{
 color: #333333;
 background-color:rgba(131, 179, 211, 0.12);
+padding: 103px 85px 103px 85px;
+width: 400px;
 }
 .advantages-item-road{
 color: #333333;
 background-color:rgba(131, 179, 211, 0.2);
+padding: 103px 85px 103px 85px;
+width: 400px;
 }
 .advantages-item-people{
 color: #333333;
 background-color:rgba(131, 179, 211, 0.12);
+padding: 103px 85px 103px 85px;
+width: 400px;
 }
 .advantages-item-rent{
 color: #333333;
 background-color:rgba(131, 179, 211, 0.12);
+padding: 80px 85px 80px 85px;
+width: 400px;
+}
+.advantages-item-food{
+color: #333333;
+background-color:#ffffff;
+padding: 80px 85px 80px 85px;
+width: 400px;
 }
 .advantages-item-present{
 color: #333333;
 background-color:rgba(131, 179, 211, 0.12);
+padding: 80px 85px 80px 85px;
+width: 400px;
 }
 .rent{
 background: url("../images/svg/house.svg") no-repeat;
 background-size: 75px 72px;
 color:#83B3D3;
+display: block;
+margin: 0 auto;
 }
 .food{
 background: url("../images/svg/food.svg") no-repeat;
 background-size: 74px 70px;
 color:#83B3D3;
+display: block;
+margin: 0 auto;
 }
 .present{
 background: url("../images/svg/present.svg") no-repeat;
 background-size: 74px 70px;
 color:#83B3D3;
+display: block;
+margin: 0 auto;
 }
 .offer{
 background-color:#ffffff;
@@ -223,6 +295,10 @@ color:#FFFFFF;
 background-color: #756157;
 text-decoration: none;
 text-transform: uppercase;
+display: block;
+margin:0 auto;
+width:376px;
+height: 52px;
 }
 .newsletter-fon{
   background-image: url("../images/JPEG/join.jpg");
@@ -230,6 +306,17 @@ text-transform: uppercase;
   background-color: #000000;
   background-repeat:no-repeat;
   background-size: 1200px 414.86px;
+}
+.form-sing{
+display: flex;
+flex-direction: row;
+}
+.page-footer-container {
+  display: flex;
+  flex-direction: column;
+  height: 414.86;
+  width: 1200px;
+  margin: 0 auto;
 }
 .page-footer-title{
 font-weight: 700;
