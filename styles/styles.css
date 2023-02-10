@@ -12,15 +12,36 @@ font-display:swap
   font-weight:700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display:swap
-  }
-
+}
+html{
+height:100%;
+}
 body {
+margin:0;
+display: flex;
+flex-direction:column;
+min-height: 100%;
 font-family: "PT Sans", sans-serif;
 font-size:16px;
 line-height: 140%;
 color: #000000;
 background-color: #FFFFFF;
 }
+.navigation{
+display:flex;
+width: 1200px;
+margin: 0 auto;
+}
+.navigation-list{
+width: 450px;
+margin:0;
+padding: 0;
+}
+.navigation-user{
+max-width: 310px;
+margin-left:auto;
+}
+
 .navigation-link{
 font-size:20px;
 line-height: 24px;
@@ -39,10 +60,23 @@ text-align:center;
   text-decoration:none;
   text-align:center;
 }
+main-container{
+flex-grow: 1;
+}
+.page-container{
+width: 1200px;
+margin: 0 auto;
+}
+.img,.welcome-image{
+display: block;
+margin: 0 auto;
+}
+
 .main-index{
 background-image: url("../images/JPEG/sedona-1.jpg");
 background-repeat:no-repeat;
 background-size: 1200px 485px;
+margin:0 auto;
 }
 .welcome-image-wrapper{
 background-image: url("images/JPEG/sedona-1.jpg");
