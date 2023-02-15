@@ -13,6 +13,9 @@ font-display:swap
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display:swap
 }
+*{
+ box-sizing: border-box;
+}
 html{
 height:100%;
 }
@@ -80,13 +83,13 @@ margin: 0 auto;
 }
 
 .main-index{
-background-image: url("../images/jpeg/sedona-1.jpg");
+background-image: url("../images/sedona-1.jpg");
 background-repeat:no-repeat;
 background-size: 1200px 485px;
 margin:0 auto;
 }
 .welcome-image-wrapper{
-background-image: url("../images/jpeg/");
+background-image: url("../images/");
 background-repeat:no-repeat;
 background-size: 1200px 485px;
 width:100%;
@@ -245,21 +248,21 @@ padding: 80px 85px 80px 85px;
 width: 400px;
 }
 .rent{
-background: url("../images/svg/house.svg") no-repeat;
+background: url("../images/house.svg") no-repeat;
 background-size: 75px 72px;
 color:#83B3D3;
 display: block;
 margin: 0 auto;
 }
 .food{
-background: url("../images/svg/food.svg") no-repeat;
+background: url("../images/food.svg") no-repeat;
 background-size: 74px 70px;
 color:#83B3D3;
 display: block;
 margin: 0 auto;
 }
 .present{
-background: url("../images/svg/present.svg") no-repeat;
+background: url("../images/present.svg") no-repeat;
 background-size: 74px 70px;
 color:#83B3D3;
 display: block;
@@ -302,7 +305,7 @@ background-repeat:no-repeat;
 background-size: 1200px 414.86px;
 }
 .newsletter-join-welcom{
-background-image: url("../images/JPEG/join.jpg");
+background-image: url("../images/join.jpg");
 }
 .page-footer-container {
 display: flex;
@@ -411,24 +414,25 @@ background-color: #ffffff;
 border: 2px solid #E5E5E5;
 border-radius: 4px;
 }
-.product-card {
-background-color: #ffffff;
-}
 .product-card-link {
 text-decoration: none;
-}
-.product-card-title {
-font-size: 24px;
-line-height: 28px;
-font-weight: 700;
-color: #000000;
 }
 .product-card-price {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
-  text-align: right;
+  padding: 16px 20px 16px 20px;
+  width:140px;
+}
+.product-card-type{
+  width: 140px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  padding: 16px 0 16px 20px;
+
 }
 .product-card-button{
   color: #ffffff;
@@ -473,9 +477,9 @@ text-decoration: none;
   background-color: #F2F2F2;
 }
 .catalog-background{
-background-image: url("../images/JPEG/filter-fon.jpg");
+background-image: url("../images/filter-fon.jpg");
 background-repeat:no-repeat;
-background-size: 100%;
+background-size: cover;
 color:#ffffff;
 }
 .navigation-logo{
@@ -520,4 +524,67 @@ line-height: 36px;
 text-transform: uppercase;
 color: #000000;
 list-style-type: none;
+}
+.product-list{
+display: flex;
+justify-content: space-between;
+margin: 0;
+padding: 0;
+text-align: center;
+flex-wrap: wrap;
+width:1060px;
+min-height: 896px;
+margin:0 70px;
+}
+.product-card{
+width: 340px;
+min-height: 438px;
+padding: 20px;
+border: 1px solid #E6E6E6;
+border-radius: 4px;
+justify-content: space-between;
+}
+.product-card-image{
+width: 300px;
+min-height: 212px;
+order:-1;
+}
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  }
+  .catalog-filter{
+display: flex;
+  }
+  .button-controls-wrapper{
+display: flex;
+gap:10px;
+
+  }
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.catalog-header{
+  display: flex;
+  justify-content: flex-start;
+  gap:70px;
+
+}
+.sorting-container{
+  margin-left: auto;
+}
+.product-card-link{
+  display:flex;
+  flex-direction: column;
 }
