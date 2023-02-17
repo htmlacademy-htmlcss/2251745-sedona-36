@@ -96,7 +96,7 @@ border-radius: 4px;
 }
 
 
-main-container{
+.main-container{
 flex-grow: 1;
 }
 
@@ -440,7 +440,7 @@ width:452px;
 height: 100%;
 background-color:#F2F2F2;
 padding: 12px 20px;
-border-radius: 4px 0px 0px 4px;
+border-radius: 4px 0 0 4px;
 }
 .newsletter-button{
 display: flex;
@@ -469,7 +469,6 @@ margin: 0 auto;
 
 
 .footer-social{
-margin: 0;
 padding: 0;
 margin: 40px 70px 30px 70px;
 display: flex;
@@ -647,7 +646,6 @@ text-decoration: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 8px 50px;
   color: #ffffff;
   background-color:#82B3D3;
   border: 2px solid #82B3D3;
