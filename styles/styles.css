@@ -73,6 +73,11 @@ margin:0;
 padding: 0;
 list-style-type: none;
 }
+.navigation-logo{
+width:140px;
+margin-left:70px;
+margin-right:28px;
+}
 .navigation-link{
 display: block;
 padding: 20px 16px;
@@ -447,7 +452,8 @@ justify-content: center;
 align-items: center;
 width: 1200px;
 min-height: 52px;
-margin-top:54px 0 104px 0;
+margin-top:54px;
+margin-bottom: 104px;
 }
 .field{
 display: flex;
@@ -645,6 +651,12 @@ line-height: 23px;
 font-weight: 400;
 color: #ffffff;
 }
+.button-controls-wrapper{
+display: flex;
+flex-direction: column;
+margin: 125px 70px 138px auto;
+gap:32px
+}
 .button-select{
 font-size: 16px;
 line-height: 20px;
@@ -807,77 +819,73 @@ margin: 0 auto;
 
 
 
-
-
-
-
-
-
-
-
-.product-card-title-image{
-  padding: 0;
-  margin: 0 auto;
-  margin-top: 0;
+.button-choose{
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+gap: 20px;
+width: 300px;
+height: 36px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .product-card-button{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-  background-color:#756157;
-  border: 2px solid #756157;
-  border-radius: 4px;
-  padding:8px 50px;
-  text-transform: uppercase;
-  text-align: center;
-  width: 140px;
-  min-height: 36px;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 700;
-
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+color: #ffffff;
+background-color:#756157;
+border-radius: 4px;
+padding:8px 50px;
+text-transform: uppercase;
+text-align: center;
+width: 140px;
+height: 36px;
+font-size: 16px;
+line-height: 20px;
+font-weight: 700;
+text-decoration: none;
 }
 .product-card-chosen{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  color: #ffffff;
-  background-color:#82B3D3;
-  border: 2px solid #82B3D3;
-  border-radius: 4px;
-  padding:8px 50px;
-  text-transform: uppercase;
-  text-align: center;
+padding: 0;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #ffffff;
+background-color:#82B3D3;
+border-radius: 4px;
+text-transform: uppercase;
+text-decoration: none;
+width: 140px;
+height: 36px;
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
 }
 .product-card-chosen-checked{
-  color: #ffffff;
-  background-color:#7DB54F;
-  border: 2px solid #7DB54F;
-  border-radius: 4px;
-  padding:8px 50px;
-  text-transform: uppercase;
-  text-align: center;
+color: #ffffff;
+background-color:#7DB54F;
+border-radius: 4px;
+text-transform: uppercase;
+text-align: center;
+}
+
+
+
+.pagination{
+padding: 0;
+margin: 0 auto;
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+align-items: center;
+width: 1060px;
+min-height: 60px;
+margin: 40px 70px 60px 70px;
+}
+.pagination-item{
+display: flex;
+align-items: center;
 }
 .pagination-link {
 color:#ffffff;
@@ -901,31 +909,10 @@ text-align: center;
 text-decoration: none;
 border-radius: 4px;
 padding: 27.27% 35.91% 29.39% 35.76%;
-
 }
 .pagination-current {
-  color: #000000;
-  background-color: #F2F2F2;
-}
-
-.navigation-logo{
-width:140px;
-margin-left:70px;
-margin-right:28px;
-}
-
-
-
-
-.catalog-center-column{
- width: 1200px;
-}
-.pagination{
-display: flex;
-flex-direction: row;
-width: 1060px;
-min-height: 60px;
-align-self: stretch;
+color: #000000;
+background-color: #F2F2F2;
 }
 .pagination-item{
 width: 60px;
@@ -943,45 +930,34 @@ gap: 8px;
 
 
 
-
-
-
-.button-controls-wrapper{
+.page-footer-container-catalog{
+margin-top: 60px;
+}
+.page-footer-join-text{
+margin:0 auto;
 display: flex;
 flex-direction: column;
-gap:10px;
+justify-content: center;
+align-items: center;
+padding-top: 96px;
+padding-bottom: 0;
+
+}
+.page-footer-title-catalog{
 margin: 0 auto;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+text-transform: uppercase;
+width: 475px;
+height: 36.35px;
 }
-
-
-
-
-
-
-
-
-
-
-.catalog-products{
-  display: flex;
-  flex-direction: column;
-}
-
-
-.button-controls-wrapper{
-display: flex;
-flex-direction: column;
-margin: 125px 70px 138px auto;
-gap:32px
-
-}
-
-
-
-
-
-.button-choose{
-  display:flex;
-  flex-direction:row;
-  justify-content:space-between;
+.page-footer-desc-catalog{
+margin: 0 auto;
+margin-top:20px;
+font-weight: 400;
+font-style: 22px;
+line-height: 26px;
+text-align: center;
+color: #333333;
 }
