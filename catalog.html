@@ -28,15 +28,15 @@
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
-              <img src="./images/search.svg" width="18" height="18" alt="Поиск"></a>
+              <img src="./images/search.svg" alt="Поиск"></a>
           </li>
           <li class="navigation-item">
-            <a class="heart">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Лайк</span>
-              <img src="./images/heart.svg" width="18" height="17" alt="Лайк"></a>
+              <img src="./images/heart.svg" alt="Лайк"></a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link-visit" href="#">ХОЧУ СЮДА!</a>
+            <a class="navigation-link navigation-link-visit" href="#">ХОЧУ СЮДА!</a>
           </li>
         </ul>
       </nav>
@@ -49,8 +49,8 @@
               <h1 class="catalog-background-title">Гостиницы Седоны</h1>
               <ul class="breadcrumbs">
                 <li class="breadcrumbs-item">
-                  <a class="breadcrumbs-link breadcrumbs-link-image" href="index.html"><img src="./images/house.svg" width="12" height="12"
-                      alt="Лайк"><span class="visually-hidden">Главная</span></a>
+                  <a class="breadcrumbs-link breadcrumbs-link-image" href="index.html"><img src="./images/house.svg"
+                      width="12" height="12" alt="Лайк"><span class="visually-hidden">Главная</span></a>
                 </li>
                 <li class="breadcrumbs-item">
                   <a class="breadcrumbs-link breadcrumbs-text">Гостиницы</a>
@@ -112,31 +112,33 @@
           <div clas="catalog-center-column">
             <div class="catalog-header">
               <h2 class="catalog-content-title">Найдено гостиниц: 38</h2>
+              <div class="sorting-container-controls">
               <div class="sorting-container">
                 <select class="select-control" aria-label="Сортировка">
-                  <option value="popular">Сначала популярные</option>
-                  <option value="cheap">Сначала дешевые</option>
-                  <option value="expensive">Сначала дорогие</option>
+                    <option value="popular">Сначала популярные</option>
+                    <option value="cheap">Сначала дешевые</option>
+                    <option value="expensive">Сначала дорогие</option>
                 </select>
               </div>
               <ul class="control-list">
                 <li class="control-list-item">
                   <a href="#" class="button button-cards">
                     <span class="visually-hidden">Показать карточки</span>
-                    <img src="./images/filter-cards.svg" width="30" heigth="30" alt="Раскладка карточки">
+                    <img class="control-list-item-image" src="./images/filter-cards.svg" alt="Раскладка карточки">
                   </a>
                 </li>
                 <li class="control-list-item"> <a class="button buttom-room" href="#">
                     <span class="visually-hidden">Показать номер</span>
-                    <img src="./images/filter-computer.svg" width="30" heigth="30" alt="Раскладка по номерам">
+                    <img class="control-list-item-image" src="./images/filter-computer.svg" alt="Раскладка по номерам">
                   </a>
                 </li>
                 <li class="control-list-item"> <a class="button button-list-rooms" href="#">
                     <span class="visually-hidden">Показать список</span>
-                    <img src="./images/filter-list.svg" width="30" heigth="30" alt="Раскладка список">
+                    <img class="control-list-item-image" src="./images/filter-list.svg" alt="Раскладка список">
                   </a>
                 </li>
               </ul>
+            </div>
             </div>
 
 
@@ -244,13 +246,13 @@
           <h2 class="visually-hidden">Социальные сети</h2>
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
+              <a class="button button-vkcom" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Вконтакте</span>
                 <img class="vkcom" src="./images/vk.svg" width="24" height="14" alt="Вконтакте">
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
+              <a class="button button-vkcom" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">telegram</span>
                 <img class="telegram" src="./images/telegram.svg" width="18" height="16" alt="Телеграм">
               </a>
