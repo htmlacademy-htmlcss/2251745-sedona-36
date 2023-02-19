@@ -632,7 +632,7 @@ text-transform: capitalize;
 }
 .sorting-container-controls{
 display: flex;
-justify-content: space-between;
+justify-content: center;
 margin: 0;
 padding: 0;
 display: flex;
@@ -734,71 +734,111 @@ flex-wrap: wrap;
 width:1060px;
 min-height: 896px;
 margin:40px 70px 0 70px;
+gap:16px;
 }
 .product-card-link {
 text-decoration: none;
+display:flex;
+flex-direction: column;
+margin: 0;
+padding: 0;
 }
-.product-card-type-price{
+.product-card{
 display: flex;
-justify-content: center;
-gap:20px
+flex-direction: column;
+align-items: flex-start;
+width: 340px;
+height: 438px;
+padding: 20px;
+border: 1px solid #E6E6E6;
+border-radius: 4px;
+justify-content: space-between;
+}
+.product-card-image{
+width: 300px;
+height: 212px;
+margin: 0 auto;
+padding: 0;
+order:-1;
 }
 .product-card-title {
+display: flex;
+justify-content: flex-start;
+align-items: center;
 font-size: 24px;
 line-height: 28px;
 font-weight: 700;
 color: #000000;
 padding: 0;
+width: 300px;
+height: 28px;
+margin-bottom: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.product-card-price {
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
-  padding: 16px 20px 16px 20px;
-  width:140px;
+.product-card-type-price{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 0;
+width: 300px;
+height: 21px;
 }
 .product-card-type{
-  width: 140px;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: 400;
-  color: #333333;
-  padding: 16px 0 16px 20px;
-
+width: 140px;
+height: 21px;
+font-size: 18px;
+line-height: 21px;
+font-weight: 400;
+color: #333333;
+text-align: left;
+padding: 0;
+margin: 0 auto;
 }
+.product-card-price {
+font-size: 18px;
+line-height: 21px;
+font-weight: 400;
+color: #333333;
+width:140px;
+height: 21px;
+text-align: right;
+padding: 0;
+margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+.product-card-title-image{
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .product-card-button{
   display: flex;
   flex-direction: row;
@@ -902,21 +942,8 @@ gap: 8px;
 }
 
 
-.product-card{
-  display: flex;
-  flex-direction: column;
-width: 340px;
-min-height: 438px;
-padding: 20px;
-border: 1px solid #E6E6E6;
-border-radius: 4px;
-justify-content: space-between;
-}
-.product-card-image{
-width: 300px;
-min-height: 212px;
-order:-1;
-}
+
+
 
 
 .button-controls-wrapper{
@@ -933,10 +960,7 @@ margin: 0 auto;
 
 
 
-.product-card-link{
-  display:flex;
-  flex-direction: column;
-}
+
 
 .catalog-products{
   display: flex;
