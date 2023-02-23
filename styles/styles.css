@@ -409,6 +409,7 @@ border-radius: 4px;
 
 .newsletter-join-welcome{
 background-image: url("../images/join.jpg");
+background-repeat:no-repeat;
 width: 1200px;
 min-height: 406px;
 padding: 0;
