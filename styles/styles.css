@@ -100,7 +100,6 @@ min-width:44px;
 min-height: 64px;
 }
 .navigation-link-visit{
-display: flex;
 font-size:16px;
 line-height: 20px;
 font-weight: 700;
@@ -402,6 +401,8 @@ height: 52px;
 margin:0 auto;
 margin-bottom: 96px;
 border-radius: 4px;
+border: none;
+cursor: pointer;
 }
 
 
@@ -478,6 +479,8 @@ background-color: #82B3D3;
 text-decoration: none;
 text-transform: uppercase;
 height: 100%;
+border: none;
+cursor: pointer;
 }
 
 
@@ -592,6 +595,7 @@ font-weight: 400;
 font-size: 16px;
 line-height: 21px;
 color: #ffffff;
+cursor: pointer;
 }
 .catalog-filter-list{
 padding: 0;
@@ -671,7 +675,25 @@ border-radius: 4px;
 padding: 8px 50px;
 width: 191px;
 min-height: 36px;
+border: none;
+cursor: pointer;
 }
+.button-clean{
+font-size: 16px;
+line-height: 20px;
+font-weight: 700;
+align-items: center;
+text-transform: uppercase;
+color:#FFFFFF;
+background-color: rgba(255,255,255,0);
+border-radius: 4px;
+padding: 8px 50px;
+width: 191px;
+min-height: 36px;
+border: none;
+cursor: pointer;
+}
+
 
 
 
