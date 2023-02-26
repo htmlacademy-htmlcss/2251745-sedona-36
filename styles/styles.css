@@ -409,10 +409,12 @@ border-radius: 4px;
 
 .newsletter-join-welcome{
 background-image: url("../images/join.jpg");
+background-repeat:no-repeat;
 width: 1200px;
 min-height: 406px;
 padding: 0;
 margin: 0;
+background-size: cover;
 }
 .newsletter-join-welcom-text{
 display: flex;
@@ -421,10 +423,10 @@ align-items: center;
 justify-content: center;
 padding: 0;
 width: 475px;
-min-height: 108.86px;
+min-height: 109px;
 color: #FFFFFF;
 gap: 20px;
-margin: 96px 362.5px 0 362.5px;
+margin: 96px 363px 0 363px;
 }
 .page-footer-title{
 font-weight: 700;
@@ -433,7 +435,7 @@ line-height: 36px;
 text-transform: uppercase;
 text-align: center;
 width: 404px;
-min-height:36.35px;
+min-height:36px;
 }
 .page-footer-desc{
 font-size:22px;
@@ -441,7 +443,7 @@ line-height:26px;
 font-weight:400;
 text-align:center;
 width: 475px;
-min-height: 52.51px;
+min-height: 53px;
 }
 .newsletter-form{
 margin: 0;
@@ -483,7 +485,7 @@ height: 100%;
 .page-footer-container {
 display: flex;
 flex-direction: column;
-min-height: 414.86;
+min-height: 415;
 width: 1200px;
 margin: 0 auto;
 }
@@ -505,7 +507,7 @@ width: 142px;
 min-height: 40px;
 }
 .footer-social-item{
-width: 47.33px;
+width: 47px;
 min-height: 40px;
 }
 .vkcom{
@@ -515,12 +517,12 @@ height: 100%;
 .telegram{
 width: 100%;
 height: 100%;
-padding:11.5px 12.67px;
+padding:12px 13px;
 }
 .youtube{
 width: 100%;
 height: 100%;
-padding:12px 12.9px 14.67px 12.9px;
+padding:12px 13px 15px 13px;
 }
 
 
@@ -565,7 +567,7 @@ text-transform: uppercase;
 color: #FFFFFF;
 width: 600px;
 min-height: 78px;
-margin: 35px 635.6px 0 70px;
+margin: 35px 636px 0 70px;
 }
 .breadcrumbs{
 margin: 0 auto;
@@ -612,7 +614,7 @@ gap: 16px;
 display: flex;
 flex-direction: row;
 gap:20px;
-width: 150.43px;
+width: 150px;
 height: 157px;
 align-items: flex-start;
 margin: 40px auto 73px 70px;
@@ -737,14 +739,11 @@ flex-grow: 1;
 
 
 .product-list{
-display: flex;
-justify-content: space-between;
+display: grid;
+grid-template-columns: repeat(3, 340px);
+list-style: none;
 margin: 0;
 padding: 0;
-text-align: center;
-flex-wrap: wrap;
-width:1060px;
-min-height: 896px;
 margin:40px 70px 0 70px;
 gap:16px;
 }
@@ -766,6 +765,7 @@ border: 1px solid #E6E6E6;
 border-radius: 4px;
 justify-content: space-between;
 }
+
 .product-card-image{
 width: 300px;
 height: 212px;
@@ -897,7 +897,7 @@ text-transform: uppercase;
 border-radius: 4px;
 background-color:#82B3D3;
 text-decoration: none;
-padding: 18.94% 40.91% 21.06% 39.09%;
+padding: 19% 41% 21% 39%;
 }
 .pagination-link-points{
 color:#000000;
@@ -908,7 +908,7 @@ font-weight: 400;
 text-align: center;
 text-decoration: none;
 border-radius: 4px;
-padding: 27.27% 35.91% 29.39% 35.76%;
+padding: 28% 36% 29% 36%;
 }
 .pagination-current {
 color: #000000;
@@ -950,7 +950,7 @@ font-size: 30px;
 line-height: 36px;
 text-transform: uppercase;
 width: 475px;
-height: 36.35px;
+height: 36px;
 }
 .page-footer-desc-catalog{
 margin: 0 auto;
