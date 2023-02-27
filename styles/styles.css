@@ -91,9 +91,11 @@ text-decoration:none;
 text-align:center;
 color: #000000;
 }
+
 .navigation-user{
 display: flex;
 flex-direction: row;
+align-items: center;
 padding: 0;
 margin: 0;
 max-width: 320px;
@@ -109,6 +111,8 @@ width: 88px;
 height: 64px;
 background-color: #82B3D3;
 }
+
+
 .navigation-link-like{
 width: 44px;
 height: 64px;
@@ -116,6 +120,7 @@ align-items: center;
 padding: 22px 12px;
 background-color: #c41111;
 }
+
 .navigation-icon {
 position: absolute;
 top: 0;
