@@ -91,6 +91,28 @@ text-decoration:none;
 text-align:center;
 color: #000000;
 }
+.navigation-link-current:before{
+position: absolute;
+width: 68px;
+right: 20px;
+bottom: -10px;
+left: 10px;
+height: 0;
+border: 2px solid #756257;
+background-color: #756257;
+content: "";
+}
+.navigation-link-catalog-current::before{
+position: absolute;
+width: 93px;
+right: 20px;
+bottom: -5px;
+left: 10px;
+height: 0;
+border: 2px solid #756257;
+background-color:#756257;
+content: "";
+}
 
 .navigation-user{
 display: flex;
@@ -135,7 +157,7 @@ fill: #000000;
 min-width:44px;
 }
 .navigation-link-visit{
-  display: flex;
+display: flex;
 font-size:16px;
 line-height: 20px;
 font-weight: 700;
@@ -211,7 +233,12 @@ color:#333333;
   min-height: 181px;
   gap:30px;
   }
+  .advantages-item-currnet{
+background-color: rgba(131, 179, 211, 0.2);
+  }
   .advantages-item-title{
+  position: relative;
+  margin-top: 0;
   font-size:24px;
   line-height: 28px;
   font-weight: 700;
@@ -222,6 +249,16 @@ color:#333333;
   min-width: 175px;
   min-height: 56px;
   }
+  .advantages-item-title::before{
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  margin-left: -30px;
+  background-color: rgba(255, 255, 255, 0.3);
+  content: "";
+  }
   .advantages-item-desc{
   font-size:18px;
   line-height: 21px;
@@ -231,6 +268,7 @@ color:#333333;
   text-align:center;
   min-width: 230px;
   min-height: 63px;
+  margin-bottom: 0;
   }
   .advantages-image{
    min-height: 100%;
@@ -263,39 +301,65 @@ flex-direction:row;
 min-height: 385px;
 min-width: 400px;
 list-style-type: none;
+background-color:rgba(131, 179, 211, 0.12);;
 }
 .advantages-title{
+position: relative;
+margin: 0 27.5px;
+padding: 0;
 font-size:24px;
 line-height:28px;
 font-weight:700;
 color: #000000;
 text-align:center;
 text-transform: uppercase;
+width: 175px;
+height: 56px;
 }
+.advantages-title::before{
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  width: 60px;
+  height: 2px;
+  margin-left: -30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+  }
 .advantages-description{
 font-size:18px;
 line-height:21px;
 font-weight:400;
 color: #333333;
 text-align:center;
+margin: 0;
 }
 .advantages-item-area{
-color: #333333;
-background-color:rgba(131, 179, 211, 0.12);
-padding: 103px 85px 103px 85px;
-width: 400px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 0;
+margin: 113px 85px;
+width: 230px;
+height: 160px;
 }
 .advantages-item-road{
-color: #333333;
-background-color:rgba(131, 179, 211, 0.2);
-padding: 103px 85px 103px 85px;
-width: 400px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 0;
+margin: 113px 85px;
+width: 230px;
+height: 160px;
 }
 .advantages-item-people{
-color: #333333;
-background-color:rgba(131, 179, 211, 0.12);
-padding: 103px 85px 103px 85px;
-width: 400px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 0;
+margin: 113px 85px;
+width: 230px;
+height: 160px;
 }
 
 
@@ -577,7 +641,6 @@ text-decoration:none;
 
 .catalog-background{
 margin: 0 auto;
-padding: 0;
 width: 1200px;
 min-height: 412px;
 display: flex;
@@ -609,13 +672,27 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 padding: 0;
-gap: 10px;
+gap: 28px;
 width: 114px;
 min-height: 21px;
 }
 .breadcrumbs-item{
+position: relative;
 list-style-type: none;
 }
+.breadcrumbs-item::after{
+position: absolute;
+top: 5px;
+right: -20px;
+width: 6px;
+height: 10px;
+background-color: #ffffff;
+content: "";
+}
+.breadcrumbs-item:last-child::after {
+content: none;
+}
+
 .breadcrumbs-link-image{
 width: 12px;
 min-height: 12px;
@@ -678,7 +755,6 @@ display: flex;
 justify-content: center;
 margin: 0;
 padding: 0;
-display: flex;
 width: 522px;
 height: 49;
 }
@@ -784,11 +860,20 @@ align-items: center;
 padding: 0;
 border-radius: 4px;
 }
-.control-list-item-image{
+.card-grid-toggle{
 display: flex;
+justify-content: center;
+align-items: center;
 width: 48px;
 height: 48px;
-flex-grow: 1;
+border: 2px solid #E5E5E5;
+border-radius: 4px;
+}
+.card-grid-toggle-cards{
+border: 2px solid #000000;
+}
+.card-grid-toggle-current{
+border: 2px solid #000000;
 }
 
 
@@ -797,7 +882,6 @@ flex-grow: 1;
 display: grid;
 grid-template-columns: repeat(3, 340px);
 list-style: none;
-margin: 0;
 padding: 0;
 margin:40px 70px 0 70px;
 gap:16px;
@@ -929,7 +1013,6 @@ text-align: center;
 
 .pagination{
 padding: 0;
-margin: 0 auto;
 display: flex;
 flex-direction: row;
 justify-content: flex-start;
