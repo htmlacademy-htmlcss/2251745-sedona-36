@@ -821,6 +821,82 @@ border: 3px solid #83B3D3;
 
 
 
+.catalog-filter-title{
+font-weight: 700px;
+font-size: 20px;
+line-height: 24px;
+text-transform: capitalize;
+margin-bottom: 32px;
+}
+.catalog-filter-group-range{
+margin: 0;
+padding: 0;
+border: none;
+}
+.range{
+display: flex;
+flex-direction: column;
+width: 288px;
+height: 104px;
+gap: 36px;
+padding: 0;
+margin: 0;
+}
+.range-wrapper-inputs{
+display: flex;
+flex-direction: row;
+}
+.range-input-min{
+border-radius: 4px 0 0 4px;
+background-color: #F2F2F2;
+}
+.range-input-max{
+border-radius: 0 4px 4px 0;
+background-color: #F2F2F2;
+}
+.range-input{
+font-weight: 700;
+font-size: 18px;
+line-height: 24px;
+width: 143px;
+height: 48px;
+padding: 12px 20px 12px 20px;
+}
+.range-scale{
+position: relative;
+height: 4px;
+margin-bottom: 16px;
+background-color: gray;
+}
+.range-hotels{
+position: absolute;
+height: 4px;
+background-color: #ffffff;
+}
+.range-toggle{
+position: absolute;
+width: 20px;
+height: 20px;
+background-color: #ffffff;
+border-radius: 5px;
+cursor: pointer;
+}
+.toggle-min {
+top: -8px;
+left: -5px;
+}
+.toggle-max {
+top: -8px;
+right: -10px;
+}
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+appearance: none;
+margin: 0;
+}
+
+
+
 .catalog-filter-group-head{
 display: flex;
 flex-direction: row;
@@ -839,7 +915,7 @@ flex-direction: row;
 justify-content: space-between;
 align-items: flex-start;
 padding: 0;
-gap: 167px;
+gap: 140px;
 width: 1060px;
 min-height: 160px;
 }
@@ -881,12 +957,17 @@ line-height: 23px;
 font-weight: 400;
 color: #ffffff;}
 
+.range-contrlos{
+  display: flex;
+  flex-direction: row;
+ gap:70px;
+}
 
 .button-controls-wrapper{
 display: flex;
 flex-direction: column;
 gap:32px;
-margin-top:auto ;
+margin-top: auto;
 }
 .button-select{
 font-size: 16px;
@@ -896,7 +977,6 @@ align-items: center;
 text-transform: uppercase;
 color:#FFFFFF;
 background-color:  #82B3D3;
-
 border-radius: 4px;
 padding: 8px 50px;
 width: 191px;
