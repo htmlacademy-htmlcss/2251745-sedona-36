@@ -1500,7 +1500,7 @@ text-transform: uppercase;
 }
 .search-form .field-group {
   margin: 0;
-  margin-bottom: 16px;
+  height: 48px;
 }
 .search-form-user-options {
   display: flex;
@@ -1536,9 +1536,12 @@ text-transform: uppercase;
   display: none;
 }
 .data-visit{
-font-size: 19px;
+padding: 0;
+font-size: 20px;
 line-height: 24px;
 font-weight: 700;
+margin-right: 24px;
+width: 145px;
 }
 .field-data{
 font-size: 18px;
@@ -1556,10 +1559,11 @@ margin-bottom: 48px;
 display: flex;
 flex-direction: row;
 align-items: baseline;
+/* width: 577px; */
+min-height: 48px;
 justify-content: space-between;
-padding-left: 70px;
-padding-right: 70px;
-gap: 24px;
+padding-left:70px ;
+
 }
 .button-search-data{
 width: 577px;
@@ -1570,6 +1574,7 @@ color: #ffffff;
 font-weight: 700;
 font-size: 20px;
 line-height: 24px;
+
 margin:100px 70px 0 70px;
 text-transform: uppercase;
 box-sizing: border-box;
@@ -1579,8 +1584,31 @@ background-image: url("../images/calendar_new.svg") ;
 background-repeat: no-repeat;
 background-position: calc(100% - 17px);
 background-size: 16px 15px;
+width: 520px;
+margin-right: 70px;
 }
 .field-data::placeholder{
 color:#000000
-
+}
+.red-text{
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+width: 371px;
+margin-top: 4px;
+margin-bottom: 23px;
+margin-left: 207px;
+padding-left: 20px;
+color:#FF5757;
+}
+.white-text{
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+width: 371px;
+margin-top: 4px;
+margin-bottom: 23px;
+margin-left: 207px;
+padding-left: 20px;
+color:#000000;
 }
