@@ -1612,3 +1612,46 @@ margin-left: 207px;
 padding-left: 20px;
 color:#000000;
 }
+.number-adults-children{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+width: 577px;
+min-height: 48px;
+margin-left: 70px;
+margin-right: 70px;
+}
+.number-guests{
+display: flex;
+justify-content: space-between;
+width: 247px;
+
+}
+.number-seats{
+display: flex;
+}
+.button-number{
+width: 40px;
+height: 48px;
+background-color: #f2f2f2;
+margin: 0;
+padding: 0;
+
+}
+.button-minus{
+background-image: url("../images/minus.svg");
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+.button-plus{
+background-image: url("../images/pluse.svg");
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+.number-desc{
+width: 31px;
+height: 48px;
+padding: 14px 10px;
+background-color: #f2f2f2;
+margin-top: 0;
+}
