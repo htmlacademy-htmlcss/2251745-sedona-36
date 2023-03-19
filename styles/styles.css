@@ -138,12 +138,29 @@ height: 64px;
 
 
 .navigation-link-like{
-  position: relative;
+position: relative;
 width: 44px;
 height: 64px;
 align-items: center;
 padding: 22px 12px;
 }
+.count-likes{
+position: absolute;
+font-size: 10px;
+line-height: 10px;
+font-weight: 400;
+padding: 5px 4px;
+width: 20px;
+height: 20px;
+background-color: #7DB54F;
+border-radius: 10px;
+top:11px;
+left:21px;
+}
+.count-likes-catalog{
+left:25px;
+}
+
 
 .navigation-icon {
 position: absolute;
@@ -201,6 +218,15 @@ background-repeat:no-repeat;
 background-size: 1200px 485px;
 margin:0 auto;
 }
+/* .main-index::before{
+position: absolute;
+background-image: url("../images/line-sedona.jpg");
+width: 1200px;
+height: 100px;
+top:10px;
+z-index: -1;
+} */
+
 .img,.welcome-image{
 display: block;
 margin: 0 auto;
@@ -861,6 +887,33 @@ background-color: #F2F2F2;
 border-radius: 0 4px 4px 0;
 background-color: #F2F2F2;
 }
+.range-input:focus{
+border:3px solid #83B3D3;
+}
+.range-input:active{
+border:2px solid #83B3D3;
+}
+.range-input:default{
+background-color: #F2F2F2;
+border: #F2F2F2;
+}
+.range-input:default{
+background-color: #F2F2F2;
+border: #F2F2F2;
+}
+.range-input:hover{
+background-color: #E6E6E6;
+border: #E6E6E6;
+}
+.range-input:hover{
+background-color: #E6E6E6;
+border: #83B3D3;
+}
+.range-input:hover{
+background-color: #F2F2F2;
+border: #000000;
+}
+
 .range-input{
 font-weight: 700;
 font-size: 18px;
@@ -1440,7 +1493,7 @@ color: #333333;
 }
 
 
-
+/*
 .modal-container{
 position: fixed;
 top: 0;
@@ -1486,18 +1539,6 @@ border: #83B3D3;
 .modal-close-button:active{
 background-color: #E6E6E6;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 .modal-title{
 margin-top: 64px;
 margin-left: 70px;
@@ -1544,8 +1585,8 @@ background-color: #ffffff;
 }
 .modal-container-close {
   display: none;
-}
-.data-visit{
+} */
+/* .data-visit{
 padding: 0;
 font-size: 20px;
 line-height: 24px;
@@ -1564,17 +1605,19 @@ background-color: #F2F2F2;
 border-radius: 4px;
 border: none;
 margin-bottom: 48px;
-}
-.search-form-data{
+} */
+
+/* .search-form-data{
 display: flex;
 flex-direction: row;
-align-items: baseline;
+align-items: baseline; */
 /* width: 577px; */
-min-height: 48px;
+/* min-height: 48px;
 justify-content: space-between;
 padding-left:70px ;
+} */
 
-}
+/*
 .button-search-data{
 width: 577px;
 padding: 18px 77px 18px 77px;
@@ -1668,7 +1711,6 @@ margin-right: 70px;
 display: flex;
 justify-content: space-between;
 width: 247px;
-
 }
 .number-seats{
 display: flex;
@@ -1761,18 +1803,13 @@ left:462px;
 .information-post{
  display: none;
 }
-.button-information:focus .information-post{
+.button-information:hover .information-post{
 display: block;
-
-
-}
-
-
-
-
-/* .modal-container{
- display: none;
 } */
+
+.modal-container{
+ display: none;
+}
 /* .navigation-link-search:focus .modal-container{
 display: block;
 } */
