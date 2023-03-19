@@ -1441,20 +1441,6 @@ color: #333333;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .modal-container{
 position: fixed;
 top: 0;
@@ -1472,8 +1458,7 @@ min-height: 576px;
 border-radius: 30px;
 background-color: #ffffff;
 }
-
- .modal-close-button{
+.modal-close-button{
 position: absolute;
 padding-top: 0;
 top: 64px;
@@ -1488,6 +1473,31 @@ background-repeat: no-repeat;
 background-position: center;
 cursor: pointer;
 }
+.modal-close-button:default{
+background-color: #F2F2F2;
+}
+.modal-close-button:hover{
+background-color: #E6E6E6;
+}
+.modal-close-button:focus{
+background-color: #E6E6E6;
+border: #83B3D3;
+}
+.modal-close-button:active{
+background-color: #E6E6E6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .modal-title{
 margin-top: 64px;
 margin-left: 70px;
@@ -1499,32 +1509,32 @@ color:#000000;
 text-transform: uppercase;
 }
 .search-form .field-group {
-  margin: 0;
-  height: 48px;
+margin: 0;
+height: 48px;
 }
 .search-form-user-options {
-  display: flex;
-  justify-content: space-between;
-  font-weight: 400;
+display: flex;
+justify-content: space-between;
+font-weight: 400;
 }
 .search-form-user-options .control-label {
-  font-weight: 400;
+font-weight: 400;
 }
 .search-form .field {
-  width: 328px;
+width: 328px;
 }
 .search-form-recovery {
-  line-height: 22px;
-  color: #000000;
+line-height: 22px;
+color: #000000;
 }
 
 .search-form-button {
-  width: 360px;
-  margin-bottom: 16px;
+width: 360px;
+margin-bottom: 16px;
 }
 
 .search-form .button + .button {
-  margin: 0;
+margin: 0;
 }
 
 .search-form-register {
@@ -1578,6 +1588,22 @@ margin:48px 70px 36px 70px;
 text-transform: uppercase;
 box-sizing: border-box;
 }
+.button-search-data:default{
+background-color: #83B3D3;
+color:#ffffff;
+}
+.button-search-data:hover{
+background-color: #68A2CA;
+color:#ffffff;
+}
+.button-search-data:focus{
+ background-color: #68A2CA;
+color:#ffffff;
+}
+.button-search-data:active{
+background-color: #68A2CA;
+color:#95BEDA;
+}
 .field-data-calendar{
 background-image: url("../images/calendar_new.svg") ;
 background-repeat: no-repeat;
@@ -1586,6 +1612,23 @@ background-size: 16px 15px;
 width: 520px;
 margin-right: 70px;
 cursor: pointer;
+}
+.field-data-calendar:default{
+background-color: #F2F2F2;
+color:rgba(0, 0, 0, 0.6);
+}
+.field-data-calendar:hover{
+background-color:#E6E6E6;
+color:rgba(0, 0, 0, 0.6);
+}
+.field-data-calendar:focus{
+background-color:#E6E6E6;
+border: #83B3D3;
+color:rgba(0, 0, 0, 0.6);
+}
+.field-data-calendar:active{
+background-color:#F2F2F2;
+border: #000000;
 }
 .field-data::placeholder{
 color:#000000
@@ -1639,6 +1682,19 @@ padding: 0;
 border: none;
 cursor: pointer;
 }
+.button-number:default{
+color: #756157;
+}
+.button-number:hover{
+color: #000000;
+}
+.button-number:focus{
+color: #000000;
+border: #82B3D3;
+}
+.button-number:active{
+color: #000000;
+}
 .button-minus{
 background-image: url("../images/minus.svg");
 background-repeat: no-repeat;
@@ -1657,9 +1713,66 @@ background-color: #f2f2f2;
 margin-top: 0;
 margin-bottom: 0;
 }
-/* .navigation-link-search:focus .modal-container-close {
+.number-tittle-button-information{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 85px;
+gap: 10px;
+}
+.button-information{
+background-color: #82B3D3;
+width: 26px;
+height: 26px;
+margin: 0;
+border-radius: 50%;
+border: none;
+background-image: url("../images/i.svg");
+background-repeat: no-repeat;
+background-position: 50% 50%;
+}
+.number-title-information{
+ display: flex;
+ flex-direction: column;
+}
+.information-content{
+position: absolute;
+width: 256px;
+height: 110px;
+background-color: #333333;
+border-radius: 10px;
+color:#ffffff;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+padding: 15px 18px 18px 22px;
+top:408px;
+left: 349px;
+}
+.delta{
+position: absolute;
+background-image: url("../images/delta.svg");
+width: 19px;
+height:9px;
+top:400px;
+left:462px;
+}
+.information-post{
+ display: none;
+}
+.button-information:focus .information-post{
 display: block;
+
+
+}
+
+
+
+
+/* .modal-container{
+ display: none;
 } */
-/* .modal-container-close{
-display: none;
+/* .navigation-link-search:focus .modal-container{
+display: block;
 } */
