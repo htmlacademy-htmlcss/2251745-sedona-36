@@ -887,6 +887,11 @@ background-color: #F2F2F2;
 border-radius: 0 4px 4px 0;
 background-color: #F2F2F2;
 }
+.range-input{
+border-top: none;
+border-left: none;
+border-bottom: none;
+}
 .range-input:focus{
 border:3px solid #83B3D3;
 }
@@ -1045,7 +1050,7 @@ border-radius: 50%;
 position: absolute;
 top: 5px;
 left: 4px;
-width: 10px;
+width: 11px;
 height: 10px;
 border-radius: 50%;
 background-image: url(../images/radio-check.svg);
