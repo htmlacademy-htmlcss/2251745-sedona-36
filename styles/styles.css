@@ -1574,8 +1574,7 @@ color: #ffffff;
 font-weight: 700;
 font-size: 20px;
 line-height: 24px;
-
-margin:100px 70px 0 70px;
+margin:48px 70px 36px 70px;
 text-transform: uppercase;
 box-sizing: border-box;
 }
@@ -1636,6 +1635,7 @@ height: 48px;
 background-color: #f2f2f2;
 margin: 0;
 padding: 0;
+border: none;
 
 }
 .button-minus{
@@ -1654,4 +1654,5 @@ height: 48px;
 padding: 14px 10px;
 background-color: #f2f2f2;
 margin-top: 0;
+margin-bottom: 0;
 }
