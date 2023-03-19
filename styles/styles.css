@@ -1657,3 +1657,9 @@ background-color: #f2f2f2;
 margin-top: 0;
 margin-bottom: 0;
 }
+/* .navigation-link-search:focus .modal-container-close {
+display: block;
+} */
+/* .modal-container-close{
+display: none;
+} */
