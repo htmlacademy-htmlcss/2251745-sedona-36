@@ -12,7 +12,7 @@
       <header class="page-header">
         <nav class="navigation">
           <div class="navigation-logo">
-            <img class="navigation-logo-image" src="./images/logo.svg" width="138" height="64" alt="Логотип Седона">
+            <img class="navigation-logo-image" src="./images/logo.svg" alt="Логотип Седона">
           </div>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -34,7 +34,9 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Лайк</span>
-                <img src="./images/heart.svg" alt="Лайк"></a>
+                <img src="./images/heart.svg" alt="Лайк">
+                <span class="count-likes count-likes-catalog">12</span>
+              </a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link navigation-link-visit" href="#">ХОЧУ СЮДА!</a>
@@ -68,20 +70,23 @@
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
                           <label class="control">
-                            <input class="control-input" type="checkbox" name="pool" checked>
-                            Бассейн
+                            <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Бассейн</span>
                           </label>
                         </li>
                         <li class="catalog-filter-item">
                           <label class="control">
-                            <input class="control-input" type="checkbox" name="parking" checked>
-                            Парковка
+                            <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Парковка</span>
                           </label>
                         </li>
                         <li class="catalog-filter-item">
                           <label class="control">
-                            <input class="control-input" type="checkbox" name="Wi-Fi">
-                            Wi-Fi
+                            <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Wi-Fi</span>
                           </label>
                         </li>
                       </ul>
@@ -90,23 +95,60 @@
                       <legend class="catalog-filter-title">Тип жилья:</legend>
                       <ul class="catalog-filter-list">
                         <li class="catalog-filter-item">
-                          <input class="control-input" type="radio" name="rooms" value="Hotel" checked id="hotel">
-                          <label class="control" for="hotel">Гостиница</label>
+                          <label class="control">
+                            <input class="visually-hidden control-input" type="radio" name="rooms" value="Hotel"
+                              checked>
+                            <span class="control-mark"></span>
+                            <span class="control-label">Гостиница</span>
+                          </label>
                         </li>
                         <li class="catalog-filter-item">
-                          <input class="control-input" type="radio" name="rooms" value="Motel" id="motel">
-                          <label class="control" for="motel"> Мотель</label>
+                          <label class="control">
+                            <input class="visually-hidden control-input" type="radio" name="rooms" value="Motel">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Мотель</span>
+                          </label>
                         </li>
                         <li class="catalog-filter-item">
-                          <input class="control-input" type="radio" name="rooms" value="Apartament" id="apartament">
-                          <label class="control" for="apartament">Апартаменты</label>
+                          <label class="control">
+                            <input class="visually-hidden control-input" type="radio" name="rooms" value="Apartament">
+                            <span class="control-mark"></span>
+                            <span class="control-label">Апартаменты</span>
+                          </label>
                         </li>
                       </ul>
                     </fieldset>
                   </div>
-                  <div class="button-controls-wrapper">
-                    <button class="button-control button-select" type="submit">Применить</button>
-                    <button class="button-control button-clean" type="submit">Сбросить</button>
+
+                  <div class="range-contrlos">
+                    <fieldset class="catalog-filter-group-range">
+                      <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+                      <div class="range">
+                        <div class="range-wrapper-inputs">
+                          <label class="catalog-filter-label">
+                            <input class="range-input range-input-min" type="number" value="0" name="min-price">
+                          </label>
+                          <label class="catalog-filter-label">
+                            <input class="range-input range-input-max" type="number" value="9000" name="max-price">
+                          </label>
+                        </div>
+                        <div class="range-scale">
+                          <div class="range-hotels" style="right: 60.5px; width: 226px">
+                            <button type="button button-range" class="range-toggle toggle-min">
+                              <span class="visually-hidden">Изменить минимальную цену.</span>
+                            </button>
+                            <button type="button button-range" class="range-toggle toggle-max">
+                              <span class="visually-hidden">Изменить максимальную цену.</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+
+                    <div class="button-controls-wrapper">
+                      <button class="button-control button-select" type="submit">Применить</button>
+                      <button class="button-control button-clean" type="submit">Сбросить</button>
+                    </div>
                   </div>
                 </form>
               </section>
@@ -172,6 +214,19 @@
                     <a class="product-card-button button" href="#">подробнее</a>
                     <a class="product-card-chosen" href="#">в избранное</a>
                   </div>
+
+                  <fieldset class="rating">
+                    <div class="rating-star-desc">Рейтинг: 8,5</div>
+                    <div class="rating-group">
+                      <input class="rating-star-art" type="radio" name="rating-star-amara" value="1" aria-label="Ужасно">
+                      <input class="rating-star-art" type="radio" name="rating-star-amara" value="2" aria-label="Сносно">
+                      <input class="rating-star-art" type="radio" name="rating-star-amara" value="3" aria-label="Нормально">
+                      <input class="rating-star-art" type="radio" name="rating-star-amara" value="4" aria-label="Хорошо" checked>
+                      <input class="rating-star-art" type="radio" name="rating-star-amara" value="5" aria-label="Отлично">
+                      <div class="rating-focus"></div>
+                    </div>
+                  </fieldset>
+
                 </li>
 
                 <li class="product-card">
@@ -187,6 +242,17 @@
                     <a class="product-card-button button" href="#">подробнее</a>
                     <a class="product-card-chosen product-card-chosen-checked" href="#">в избранное</a>
                   </div>
+                  <fieldset class="rating">
+                    <div class="rating-star-desc">Рейтинг: 9,2</div>
+                    <div class="rating-group">
+                      <input class="rating-star-art" type="radio" name="rating-star-diablo" value="1" aria-label="Ужасно">
+                      <input class="rating-star-art" type="radio" name="rating-star-diablo" value="2" aria-label="Сносно">
+                      <input class="rating-star-art" type="radio" name="rating-star-diablo" value="3" aria-label="Нормально">
+                      <input class="rating-star-art" type="radio" name="rating-star-diablo" value="4" aria-label="Хорошо" checked>
+                      <input class="rating-star-art" type="radio" name="rating-star-diablo" value="5" aria-label="Отлично">
+                      <div class="rating-focus"></div>
+                    </div>
+                  </fieldset>
                 </li>
 
                 <li class="product-card">
@@ -202,6 +268,17 @@
                     <a class="product-card-button button" href="#">подробнее</a>
                     <a class="product-card-chosen" href="#">в избранное</a>
                   </div>
+                  <fieldset class="rating">
+                    <div class="rating-star-desc">Рейтинг: 6,9</div>
+                    <div class="rating-group">
+                      <input class="rating-star-art" type="radio" name="rating-star-desert" value="1" aria-label="Ужасно">
+                      <input class="rating-star-art" type="radio" name="rating-star-desert" value="2" aria-label="Сносно">
+                      <input class="rating-star-art" type="radio" name="rating-star-desert" value="3" aria-label="Нормально" checked>
+                      <input class="rating-star-art" type="radio" name="rating-star-desert" value="4" aria-label="Хорошо">
+                      <input class="rating-star-art" type="radio" name="rating-star-desert" value="5" aria-label="Отлично">
+                      <div class="rating-focus"></div>
+                    </div>
+                  </fieldset>
                 </li>
 
                 <li class="product-card">
@@ -217,6 +294,18 @@
                     <a class="product-card-button button" href="#">подробнее</a>
                     <a class="product-card-chosen" href="#">в избранное</a>
                   </div>
+                  <fieldset class="rating">
+                    <div class="rating-star-desc">Рейтинг: 5,0</div>
+                    <div class="rating-group">
+                      <input class="rating-star-art" type="radio" name="rating-star-green" value="1" aria-label="Ужасно">
+                      <input class="rating-star-art" type="radio" name="rating-star-green" value="2" aria-label="Сносно"
+                        checked>
+                      <input class="rating-star-art" type="radio" name="rating-star-green" value="3" aria-label="Нормально">
+                      <input class="rating-star-art" type="radio" name="rating-star-green" value="4" aria-label="Хорошо">
+                      <input class="rating-star-art" type="radio" name="rating-star-green" value="5" aria-label="Отлично">
+                      <div class="rating-focus"></div>
+                    </div>
+                  </fieldset>
                 </li>
               </ul>
 
@@ -253,7 +342,8 @@
                 бойскаутское!</p>
             </div>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+              <input class="field newsletter-form-field" placeholder="Ваш e-mail" type="email" name="newsletter-email"
+                required>
               <button class="button newsletter-button" type="submit">Подписаться</button>
             </form>
           </section>

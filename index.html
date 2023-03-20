@@ -30,7 +30,7 @@
           <ul class="navigation-user">
             <div class="navigation-icon-search-like">
               <li class="navigation-item">
-                <a class="navigation-link" href="#">
+                <a class="navigation-link navigation-link-search" href="#">
                   <span class="visually-hidden">Поиск</span>
                   <svg class="navigation-icon" aria-hidden="true" focusable="false" width="20" height="20"
                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
@@ -45,7 +45,9 @@
                     width="18" height="17" fill="none" viewBox="0 0 18 17">
                     <path fill="#000"
                       d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" />
-                  </svg></a>
+                  </svg>
+                  <span class="count-likes">12</span>
+                </a>
               </li>
             </div>
             <li class="navigation-item">
@@ -140,7 +142,7 @@
               <p class="page-footer-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
             </div>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-              <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
+              <input class="field newsletter-form-field" placeholder="Ваш e-mail" type="email" name="newsletter-email" required>
               <button class="button newsletter-button" type="submit"><span class="join-put">Подписаться</span></button>
             </form>
           </section>
@@ -182,6 +184,62 @@
           </section>
         </div>
       </footer>
+    </div>
+
+
+    <div class="modal-container">
+      <div class="modal modal-search">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="field-group search-form-data">
+              <label class="data-visit data-welcome" for="search-data-welcome">Дата Заезда:</label>
+              <input class="field-data field-data-calendar" type="text" id="search-data-welcome" name="data-visit"
+                placeholder="27 апреля 2020">
+            <p class="text-comment red-text">Мы не можем отправить вас в прошлое.</p>
+            </p>
+            <p class="field-group search-form-data">
+              <label class="data-visit data-departure" for="search-data-departure">Дата Выезда:</label>
+              <input class="field-data field-data-calendar" type="text" id="search-data-departure" name="data-visit"
+                placeholder="1 сентября 2023">
+            <p class="text-comment white-text">На эти даты есть свободные номера. Пока есть.</p>
+            </p>
+            <div class="number-adults-children">
+              <div class="number-guests">
+                <h3 class="number-title number-adults-title">Взрослые:</h3>
+                <div class="number-seats">
+                  <button class="button-number button-minus" href="#"></button>
+                  <p class="number-desc number-desc-adults">2</p>
+                  <button class="button-number button-plus" href="#"></button>
+                </div>
+              </div>
+              <div class="number-guests">
+                <div class="number-title-information">
+                  <div class="number-tittle-button-information">
+                    <h3 class="number-title number-children-title">Дети:</h3>
+                    <button class="button-information" href="#"></button>
+                  </div>
+                  <div class="information-post">
+                    <span class="information-content">Укажите количество детей, которые будут с вами, возраст которых от
+                      6
+                      до 18лет. Дети до 6 лет размещаются бесплтано.</span>
+                    <span class="delta"></span>
+                  </div>
+                </div>
+                <div class="number-seats">
+                  <button class="button-number button-minus" href="#"></button>
+                  <p class="number-desc number-desc-children">2</p>
+                  <a class="button-number button-plus" href="#"></a>
+                </div>
+              </div>
+            </div>
+            <button class="button button-search-data" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
     </div>
   </body>
 
